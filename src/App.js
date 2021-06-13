@@ -31,11 +31,19 @@ function App() {
   }
 
   return (
-    <div className="app ">
+    
+    <div className= {(typeof weather.main != "undefined") ? ((weather.main.temp > 16) ? "app" : "app cold") : "app"}>
+      <main>
       <div className="container">
         <div className="contents">
           <div className="searchBar">
-            <input type="text" className="searchBox" placeholder="Search..." onChange={e => setQuery(e.target.value)} value={query} onKeyPress={search}/>
+            <input list="MoonTypes" type="text" className="searchBox" placeholder="Search..." onChange={e => setQuery(e.target.value)} value={query} onKeyPress={search}/>
+            <datalist id="MoonTypes">
+            <option value="Southampton"/>
+            <option value="Kuala Lumpur"/>
+            <option value="Sydney"/>
+            <option value="New York City"/>
+            </datalist>
           </div>
           {(typeof weather.main != "undefined") ? (
           <div className="info">
@@ -59,6 +67,7 @@ function App() {
           ) : ('')}
         </div>
       </div>
+      </main>
     </ div>
   );
 }

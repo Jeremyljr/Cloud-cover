@@ -2,7 +2,7 @@ body {
   margin: 0;
   overflow-y: hidden;
   color: white;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.75));
+  font-family: 'montseratt', sans-serif;
 }
 
 code {
@@ -30,14 +30,18 @@ code {
   transition: 0.4s ease;
 }
 
-.container{
+main{
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.75));
   height: 100vh;
-  width: 70vw;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
-/* .search{
-  height: 10vh;
-} */
+.container{
+  height: 100vh;
+  width: 75vw;
+}
 
 .searchBox, .searchBar{
   appearance: none;
@@ -53,6 +57,7 @@ code {
 }
 
 .searchBar{
+  display: flex;
   padding: 3vh;
   margin: 7vh 0px;
 
@@ -93,6 +98,8 @@ code {
 
 .locationDescription, .dateDescription{
   font-size: 24px;
+  transition: 0.5s ease-in;
+
 }
 
 .location, .date{
