@@ -1,0 +1,108 @@
+body {
+  margin: 0;
+  overflow-y: hidden;
+  color: white;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.75));
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.app {
+  background-image: url(./img/summer.jpg); 
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  transition: 0.4s ease;
+}
+
+.app.cold{
+  background-image: url(./img/winter.jpg); 
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  transition: 0.4s ease;
+}
+
+.container{
+  height: 100vh;
+  width: 70vw;
+}
+
+/* .search{
+  height: 10vh;
+} */
+
+.searchBox, .searchBar{
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+
+  font-size: 20px;
+}
+
+.searchBox{
+  width: 100%;
+}
+
+.searchBar{
+  padding: 3vh;
+  margin: 7vh 0px;
+
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 25px;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 20px;
+
+  transition: 0.4s ease;
+}
+/* bottom hero must be 40 vh */
+.hero_1{
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.temperature{
+  font-size: 105px;
+}
+
+.weather{
+  font-size: 40px;
+}
+
+.hero_2{
+  height: 37vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.locationTitle, .dateTitle{
+  font-size: 30px;
+}
+
+.locationDescription, .dateDescription{
+  font-size: 24px;
+}
+
+.location, .date{
+  height: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.divider {
+  background-color: rgb(255, 255, 255, 0.5);
+  height: 3px;
+}
