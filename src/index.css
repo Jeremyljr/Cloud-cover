@@ -31,7 +31,7 @@ code {
 }
 
 main{
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.75));
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.75));
   height: 100vh;
   width: 100%;
   display: flex;
