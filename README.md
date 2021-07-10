@@ -13,7 +13,7 @@ A drop down menu provides suggestions of cities that the user could search for.
 The background image will change dynamically depending on the temperature of that specific city.
 ![background GIF](src/img/readme/background.gif)
 
-Cloud Cover is also responsive in all types of device screen sizes.
+Cloud Cover is also responsive in all types of device screen sizes.  
 ![responsive GIF](src/img/readme/responsive.JPG)
 
 ## Features
